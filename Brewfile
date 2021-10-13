@@ -13,6 +13,7 @@ brew "fzf"
 brew "gh"
 brew "httpie"
 brew "thefuck"
+brew "tree"
 brew "tmux"
 
 cask "font-jetbrains-mono"
