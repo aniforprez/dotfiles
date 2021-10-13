@@ -1,0 +1,34 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+    shell:
+      stderr: true
+      stdout: true
+
+- clean: ["~", "~/.oh-my-zsh/custom/", "~/.oh-my-zsh/custom/plugins/"]
+
+- shell:
+    - [sh pre-install.sh, Running pre installation script]
+    - [
+        brew bundle install --no-lock,
+        Installing Homebrew formulas from Brewfile,
+      ]
+
+- link:
+    ~/.tmux.conf: tmux.conf
+    ~/.zshrc: zshrc
+    ~/.p10k.zsh: p10k.zsh
+    ~/.gitconfig: gitconfig
+    ~/.gitconfig_local: gitconfig_local
+    ~/.gitmessage: gitmessage
+    ~/.gitignore_global: gitignore_global
+    ~/.oh-my-zsh/custom/extras.zsh: oh-my-zsh/custom/extras.zsh
+    ~/.oh-my-zsh/custom/plugins/autoupdate: oh-my-zsh/custom/plugins/autoupdate-oh-my-zsh-plugins
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/custom/plugins/zsh-autosuggestions
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+    ~/.oh-my-zsh/custom/themes/powerlevel10k: oh-my-zsh/custom/themes/powerlevel10k
+    ~/.vimrc: vimrc
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
