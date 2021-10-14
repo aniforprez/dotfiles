@@ -3,6 +3,7 @@ tap "homebrew/core"
 tap "homebrew/cask-fonts"
 tap "buo/cask-upgrade"
 brew "mas"
+brew "gpg"
 
 brew "asdf"
 brew "bat"
