@@ -84,6 +84,7 @@ plugins=(
   asdf
   autoupdate
   common-aliases
+  forgit
   fzf
   gitfast
   thefuck
