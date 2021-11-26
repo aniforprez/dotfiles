@@ -4,7 +4,7 @@
 which -s brew
 if [[ $? != 0 ]]; then
   echo 'Installing homebrew'
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
   echo 'Updating homebrew'
   brew update

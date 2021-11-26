@@ -14,13 +14,13 @@
         brew bundle install --no-lock,
         Installing Homebrew formulas from Brewfile,
       ]
+    - [cp gitconfig_local ~/.gitconfig_local]
 
 - link:
     ~/.tmux.conf: tmux.conf
     ~/.zshrc: zshrc
     ~/.p10k.zsh: p10k.zsh
     ~/.gitconfig: gitconfig
-    ~/.gitconfig_local: gitconfig_local
     ~/.gitmessage: gitmessage
     ~/.gitignore_global: gitignore_global
     ~/.oh-my-zsh/custom/extras.zsh: oh-my-zsh/custom/extras.zsh
