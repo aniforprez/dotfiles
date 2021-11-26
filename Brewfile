@@ -17,5 +17,6 @@ brew "thefuck"
 brew "tree"
 brew "tmux"
 
+cask "stats"
 cask "font-jetbrains-mono"
 cask "font-meslo-lg-nerd-font"
