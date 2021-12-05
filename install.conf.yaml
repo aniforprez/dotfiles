@@ -37,3 +37,4 @@
     - [asdf plugin add golang, Asdf plugins]
     - [asdf plugin add python, Asdf plugins]
     - [asdf plugin add nodejs, Asdf plugins]
+    - [asdf plugin add postgres, Asdf plugins]
