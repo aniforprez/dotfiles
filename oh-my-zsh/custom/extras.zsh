@@ -21,3 +21,6 @@ export FZF_DEFAULT_OPTS="
 
 # Sourcing asdf shell directly instead of using the plugin
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+# Creating an alias for lazygit
+alias lg="lazygit"
