@@ -18,3 +18,6 @@ export FZF_DEFAULT_OPTS="
 --bind 'ctrl-v:execute(code {+})'
 --bind 'alt-j:preview-down,alt-k:preview-up'
 "
+
+# Sourcing asdf shell directly instead of using the plugin
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
