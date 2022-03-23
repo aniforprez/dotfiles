@@ -27,6 +27,7 @@
     ~/.oh-my-zsh/custom/extras.zsh: oh-my-zsh/custom/extras.zsh
     ~/.oh-my-zsh/custom/plugins/autoupdate: oh-my-zsh/custom/plugins/autoupdate-oh-my-zsh-plugins
     ~/.oh-my-zsh/custom/plugins/forgit: oh-my-zsh/custom/plugins/forgit
+    ~/.oh-my-zsh/custom/plugins/fzf-tab: oh-my-zsh/custom/plugins/fzf-tab
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/custom/plugins/zsh-autosuggestions
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting
     ~/.oh-my-zsh/custom/themes/powerlevel10k: oh-my-zsh/custom/themes/powerlevel10k

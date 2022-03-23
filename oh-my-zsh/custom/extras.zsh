@@ -24,3 +24,8 @@ export FZF_DEFAULT_OPTS="
 
 # Creating an alias for lazygit
 alias lg="lazygit"
+
+# Chromium stuff for M1 macs
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+export PUPPETEER_EXECUTABLE_PATH=`which chromium`
+

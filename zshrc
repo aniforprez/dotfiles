@@ -85,6 +85,7 @@ plugins=(
   common-aliases
   forgit
   fzf
+  fzf-tab
   gitfast
   thefuck
   zsh-autosuggestions
