@@ -20,10 +20,14 @@ export FZF_DEFAULT_OPTS="
 "
 
 # Sourcing asdf shell directly instead of using the plugin
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+. $(brew --prefix asdf)/libexec/asdf.sh
 
 # Creating an alias for lazygit
 alias lg="lazygit"
+alias ls="lsd"
+
+# Sourcing broot
+source /Users/aniforprez/.config/broot/launcher/bash/br
 
 # Chromium stuff for M1 macs
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
