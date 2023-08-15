@@ -50,6 +50,9 @@ alias ls="lsd"
 # Sourcing broot
 source /Users/aniforprez/.config/broot/launcher/bash/br
 
+# Set GOROOT with asdf
+. ~/.asdf/plugins/golang/set-env.zsh
+
 # Chromium stuff for M1 macs
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=`which chromium`
