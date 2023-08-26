@@ -13,6 +13,7 @@ brew "fd"
 brew "fzf"
 brew "gh"
 brew "git-delta"
+brew "helix"
 brew "httpie"
 brew "lazydocker"
 brew "lazygit"
@@ -23,13 +24,30 @@ brew "thefuck"
 brew "tree"
 brew "tmux"
 
+# Browsers
+cask "google-chrome"
+cask "firefox"
+
+# Utilities
 cask "stats"
+cask "1password"
+cask "transmission"
+cask "spotify"
+
+# Dev tools
 cask "iterm2"
 cask "visual-studio-code"
-cask "1password"
+cask "sublime-text"
 cask "1password/tap/1password-cli"
+cask "docker"
+cask "insomnia"
+cask "postico"
+
+# Fonts
 cask "font-jetbrains-mono"
 cask "font-meslo-lg-nerd-font"
-cask "docker"
-cask "postico"
-cask "insomnia"
+
+# Communication
+cask "telegram-desktop"
+cask "slack"
+cask "discord"
