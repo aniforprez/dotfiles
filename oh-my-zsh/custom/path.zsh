@@ -1,5 +1,5 @@
 # Go path. Replace with the desired go source location
-export GOPATH=$HOME/Documents/code/go
+export GOPATH=$HOME/Code/go
 
 # Path variables
 path=(
