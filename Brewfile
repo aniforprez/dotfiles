@@ -42,6 +42,7 @@ cask "1password/tap/1password-cli"
 cask "docker"
 cask "insomnia"
 cask "postico"
+cask "github"
 
 # Fonts
 cask "font-jetbrains-mono"
@@ -51,3 +52,7 @@ cask "font-meslo-lg-nerd-font"
 cask "telegram-desktop"
 cask "slack"
 cask "discord"
+
+# Miscellaneous
+cask "applite"
+cask "iina"

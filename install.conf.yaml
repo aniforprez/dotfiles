@@ -32,6 +32,7 @@
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting
     ~/.oh-my-zsh/custom/themes/powerlevel10k: oh-my-zsh/custom/themes/powerlevel10k
     ~/.vimrc: vimrc
+    ~/.config/helix/config.toml: helix-config.toml
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
