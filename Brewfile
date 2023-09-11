@@ -55,4 +55,8 @@ cask "discord"
 
 # Miscellaneous
 cask "applite"
+cask "cheatsheet"
+cask "dozer"
 cask "iina"
+cask "linearmouse"
+cask "rectangle"
