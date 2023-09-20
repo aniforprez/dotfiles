@@ -1,4 +1,4 @@
-theme = "onedark"
+theme = "catppuccin_macchiato"
 
 [editor]
 line-number = "absolute"
@@ -14,9 +14,9 @@ mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
-# or control each character
+# Render whitespace characters
 [editor.whitespace.render]
-space = "all"
+space = "none"
 tab = "all"
 newline = "none"
 
