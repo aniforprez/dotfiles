@@ -40,3 +40,7 @@
     - [asdf plugin add python, Asdf plugins]
     - [asdf plugin add nodejs, Asdf plugins]
     - [asdf plugin add postgres, Asdf plugins]
+    - [
+        mkdir ~/.config/helix/themes/ && cp helix-themes/* ~/.config/helix/themes/,
+        "Copying helix themes"
+      ]
