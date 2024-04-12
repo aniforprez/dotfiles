@@ -16,3 +16,6 @@
 [submodule "oh-my-zsh/custom/plugins/fzf-tab"]
 	path = oh-my-zsh/custom/plugins/fzf-tab
 	url = https://github.com/Aloxaf/fzf-tab
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot.git

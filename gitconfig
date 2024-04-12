@@ -28,6 +28,12 @@
 	new = green bold
 	whitespace = red reverse
 
+[push]
+	autoSetupRemote = true
+
+[fetch]
+	prune = true
+
 [pager]
 	diff = delta
 	log = delta
