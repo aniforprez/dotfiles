@@ -7,6 +7,7 @@ brew "mas"
 brew "gpg"
 
 brew "asdf"
+brew "atuin"
 brew "bat"
 brew "broot"
 brew "fd"
@@ -47,6 +48,7 @@ cask "github"
 # Fonts
 cask "font-jetbrains-mono"
 cask "font-meslo-lg-nerd-font"
+cask "font-monaspace"
 
 # Communication
 cask "telegram-desktop"
