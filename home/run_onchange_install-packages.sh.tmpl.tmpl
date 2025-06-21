@@ -1,0 +1,96 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+echo 'Installing packages using Brew'
+
+brew bundle --verbose --file=/dev/stdin <<EOF
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "buo/cask-upgrade"
+
+brew "mas"
+brew "gpg"
+
+brew "asdf"
+brew "atuin"
+brew "bat"
+brew "broot"
+brew "fd"
+brew "fzf"
+brew "gh"
+brew "git-delta"
+brew "helix"
+brew "httpie"
+brew "lazydocker"
+brew "lazygit"
+brew "lsd"
+brew "micro"
+brew "openssl"
+brew "thefuck"
+brew "tree"
+brew "tmux"
+
+# Browsers
+cask "google-chrome"
+cask "firefox"
+
+# Utilities
+cask "stats"
+cask "1password"
+cask "transmission"
+brew "nextdns"
+cask "cheatsheet"
+cask "dozer"
+cask "linearmouse"
+cask "rectangle"
+
+# Dev tools
+cask "iterm2"
+cask "visual-studio-code"
+cask "sublime-text"
+cask "zed"
+cask "1password/tap/1password-cli"
+cask "orbstack"
+cask "insomnia"
+cask "postico"
+cask "github"
+
+# Fonts
+cask "font-jetbrains-mono"
+cask "font-meslo-lg-nerd-font"
+cask "font-monaspace"
+
+# Communication
+cask "telegram-desktop"
+cask "slack"
+cask "discord"
+
+# Miscellaneous
+cask "iina"
+cask "spotify"
+EOF
+{{ end -}}
+
+# Check if oh-my-zsh is installed
+OMZDIR="$HOME/.oh-my-zsh"
+if [ ! -d "$OMZDIR" ]; then
+  echo 'Installing oh-my-zsh'
+  /bin/sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+else
+  echo 'Updating oh-my-zsh'
+  /bin/zsh -c "omz update"
+fi
+
+# Change default shell
+MYSHELL=`ps -hp $$|awk '{echo $5}'`
+if [ ! $MYSHELL = "zsh" ]; then
+  echo 'Changing default shell to zsh'
+  chsh -s /bin/zsh
+else
+  echo 'Already using zsh'
+fi
+
+# asdf plugins
+asdf plugin add golang
+asdf plugin add python
+asdf plugin add nodejs
