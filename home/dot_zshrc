@@ -83,7 +83,6 @@ HIST_STAMPS="dd.mm.yyyy"
 plugins=(
   autoupdate
   common-aliases
-  forgit
   fzf
   fzf-tab
   gitfast
