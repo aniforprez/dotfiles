@@ -1,2 +1,17 @@
 gui:
   nerdFontsVersion: "3"
+notARepository: skip
+
+git:
+  # If true, periodically fetch from remote
+  autoFetch: false
+
+# Background refreshes
+refresher:
+  # File/submodule refresh interval in seconds.
+  # Auto-refresh can be disabled via option 'git.autoRefresh'.
+  refreshInterval: 10
+
+  # Re-fetch interval in seconds.
+  # Auto-fetch can be disabled via option 'git.autoFetch'.
+  fetchInterval: 60
