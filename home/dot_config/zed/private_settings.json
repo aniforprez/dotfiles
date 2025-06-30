@@ -16,6 +16,7 @@
   "terminal": {
     "font_family": "MesloLGS Nerd Font",
     "font_size": 13,
+    "line_height": "standard",
     "blinking": "on"
   },
   "show_whitespaces": "all",
