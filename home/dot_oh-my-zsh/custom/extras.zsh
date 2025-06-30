@@ -39,16 +39,10 @@ zstyle ':fzf-tab:complete:(kill|ps):argument-rest' fzf-flags --preview-window=do
 # brew tab completions
 zstyle ':fzf-tab:complete:brew-(install|uninstall|search|info):*-argument-rest' fzf-preview 'brew info $word'
 
-# Sourcing asdf shell directly instead of using the plugin
-. $(brew --prefix asdf)/libexec/asdf.sh
-
 # Creating an alias for lazygit
 alias lg="lazygit"
 # Alias for lsd to take over ls
 alias ls="lsd"
-
-# Sourcing broot
-source /Users/aniforprez/.config/broot/launcher/bash/br
 
 # Set GOROOT with asdf
 . ~/.asdf/plugins/golang/set-env.zsh
@@ -57,3 +51,8 @@ source /Users/aniforprez/.config/broot/launcher/bash/br
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
 export PUPPETEER_EXECUTABLE_PATH=`which chromium`
 
+# Source broot
+source ~/.config/broot/launcher/bash/br
+
+# Zoxide
+eval "$(zoxide init zsh)"
