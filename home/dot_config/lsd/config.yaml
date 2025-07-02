@@ -1,0 +1,7 @@
+# Config file reference: https://github.com/lsd-rs/lsd#configuration
+
+# == Ignore Globs ==
+# A list of globs to ignore when listing.
+ignore-globs:
+  - .git
+  - node_modules
