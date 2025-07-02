@@ -1,6 +1,14 @@
 {{- if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 
+if ! [ -x "$(command -v brew)" ]; then
+  echo 'Installing homebrew'
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+  echo 'Updating homebrew'
+  brew update
+fi
+
 echo 'Installing packages using Brew'
 
 brew bundle --verbose --file=/dev/stdin <<EOF
@@ -10,6 +18,10 @@ tap "buo/cask-upgrade"
 
 brew "mas"
 brew "gpg"
+
+# zsh shell
+brew "zsh"
+brew "antidote"
 
 # CLI Tools
 brew "asdf"
@@ -72,16 +84,6 @@ cask "iina"
 cask "spotify"
 EOF
 {{ end -}}
-
-# Check if oh-my-zsh is installed
-OMZDIR="$HOME/.oh-my-zsh"
-if [ ! -d "$OMZDIR" ]; then
-  echo 'Installing oh-my-zsh'
-  /bin/sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-else
-  echo 'Updating oh-my-zsh'
-  /bin/zsh -c "omz update"
-fi
 
 # Change default shell
 MYSHELL=`ps -hp $$|awk '{echo $5}'`
