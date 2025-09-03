@@ -7,6 +7,7 @@ path=(
   $HOME/.local/bin
   /usr/local/bin
   /opt/homebrew/bin
+  /opt/homebrew/sbin
   $GOPATH/bin
   $path
 )
