@@ -31,6 +31,12 @@ export path=(
 )
 {{- end }}
 
+# Set fpath for new completions
+export fpath=(
+  $HOME/.site-functions
+  $fpath
+)
+
 # Smarter completion initialization
 autoload -Uz compinit
 if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; then
