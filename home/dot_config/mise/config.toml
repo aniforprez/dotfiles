@@ -1,2 +1,6 @@
 [settings]
 idiomatic_version_file_enable_tools = ["python"]
+
+[tools]
+go = "1.23.9"
+python = "3.13.5"
