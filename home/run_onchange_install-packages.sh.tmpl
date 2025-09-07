@@ -12,7 +12,6 @@ fi
 echo 'Installing packages using Brew'
 
 brew bundle --verbose --file=/dev/stdin <<EOF
-tap "homebrew/bundle"
 tap "buo/cask-upgrade"
 
 brew "mas"
@@ -95,11 +94,6 @@ if [ ! $MYSHELL = "zsh" ]; then
 else
   echo 'Already using zsh'
 fi
-
-# asdf plugins
-asdf plugin add golang
-asdf plugin add python
-asdf plugin add nodejs
 
 # TLDR cache update
 tldr --update
