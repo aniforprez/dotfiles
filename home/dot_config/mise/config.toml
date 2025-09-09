@@ -3,5 +3,6 @@ idiomatic_version_file_enable_tools = ["python"]
 
 [tools]
 go = "1.23.9"
+node = "lts"
 python = "3.13.5"
 usage = "latest"
