@@ -45,7 +45,10 @@
 
 [delta]
 	features = decorations
-    line-numbers = true
+	line-numbers = true
+	hyperlinks = true
+	side-by-side = true
+
 
 [delta "interactive"]
 	keep-plus-minus-markers = false
