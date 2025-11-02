@@ -60,10 +60,7 @@
     "Python": {
       "language_servers": ["basedpyright", "ruff"],
       "format_on_save": "on",
-      "formatter": [
-        { "language_server": { "name": "ruff" } },
-        { "code_actions": { "source.organizeImports.ruff": true } }
-      ]
+      "formatter": [{ "language_server": { "name": "ruff" } }]
     }
   },
   "lsp": {
@@ -79,6 +76,8 @@
     }
   },
   "inlay_hints": {
+    "show_background": false,
+    "enabled": false,
     "toggle_on_modifiers_press": { "control": true, "alt": true }
   },
   "diagnostics": {
