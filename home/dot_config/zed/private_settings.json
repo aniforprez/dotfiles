@@ -8,6 +8,13 @@
 // from the command palette or from `Zed` application menu.
 {
   // Presentation settings
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini"
+    },
+    "model_parameters": []
+  },
   "theme": "Catppuccin Macchiato",
   "icon_theme": "Material Icon Theme",
   "ui_font_size": 15,
@@ -80,8 +87,13 @@
       "settings": {
         "experimental": {
           "classRegex": [
-            "tv([\"'`][^\"'`]*.*?[\"'`])",
-            "[\"'`]([^\"'`]*).*?[\"'`]"
+            // tailwind-variant
+            ["tv\\({([^]*?)}\\)", "[\"'`]([^\"'`]*)[\"'`]"],
+            // clsx
+            [
+              "clsx\\(((?:[^()]|\\([^()]*\\))*)\\)",
+              "(?:'|\"|`)([^']*)(?:'|\"|`)"
+            ]
           ]
         }
       }
