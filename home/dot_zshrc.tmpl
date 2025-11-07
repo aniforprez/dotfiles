@@ -107,6 +107,10 @@ alias t='tail -f'
 alias gs="git status"
 alias gd="git diff"
 
+# Custom keybindings for home and end keys
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
