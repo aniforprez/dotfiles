@@ -61,6 +61,18 @@
       "language_servers": ["basedpyright", "ruff"],
       "format_on_save": "on",
       "formatter": [{ "language_server": { "name": "ruff" } }]
+    },
+    "Go": {
+      "language_servers": ["gopls", "golangci-lint"],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "external": {
+            "command": "golangci-lint",
+            "arguments": ["fmt", "--stdin"]
+          }
+        }
+      ]
     }
   },
   "lsp": {
@@ -72,6 +84,18 @@
             "[\"'`]([^\"'`]*).*?[\"'`]"
           ]
         }
+      }
+    },
+    "golangci-lint": {
+      "initialization_options": {
+        "command": [
+          "golangci-lint",
+          "run",
+          "--output.json.path",
+          "stdout",
+          "--show-stats=false",
+          "--output.text.path="
+        ]
       }
     }
   },
