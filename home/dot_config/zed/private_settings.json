@@ -8,13 +8,6 @@
 // from the command palette or from `Zed` application menu.
 {
   // Presentation settings
-  "agent": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5-mini"
-    },
-    "model_parameters": []
-  },
   "theme": "Catppuccin Macchiato",
   "icon_theme": "Material Icon Theme",
   "ui_font_size": 15,
@@ -126,5 +119,20 @@
       "min_column": 0,
       "max_severity": null
     }
+  },
+
+  // AI
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini"
+    },
+    "model_parameters": []
   }
 }
