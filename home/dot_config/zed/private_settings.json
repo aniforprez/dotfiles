@@ -8,7 +8,7 @@
 // from the command palette or from `Zed` application menu.
 {
   // Presentation settings
-  "theme": "Catppuccin Macchiato",
+  "theme": "Catppuccin Mocha",
   "icon_theme": "Material Icon Theme",
   "ui_font_size": 15,
   "buffer_font_family": "JetBrains Mono",
