@@ -8,6 +8,16 @@
 // from the command palette or from `Zed` application menu.
 {
   // Presentation settings
+  "project_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left",
+    "tree_view": true
+  },
   "colorize_brackets": false,
   "sticky_scroll": {
     "enabled": true
@@ -134,12 +144,12 @@
 
   // AI
   "edit_predictions": {
+    "provider": "zed",
     "mode": "subtle"
   },
-  "features": {
-    "edit_prediction_provider": "copilot"
-  },
   "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5-mini"
