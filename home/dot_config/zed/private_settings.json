@@ -8,19 +8,25 @@
 // from the command palette or from `Zed` application menu.
 {
   // Presentation settings
+  "language_models": {
+    "opencode": {
+      "show_go_models": false,
+      "show_zen_models": false,
+    },
+  },
   "project_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "git_panel": {
     "dock": "left",
-    "tree_view": true
+    "tree_view": true,
   },
   "colorize_brackets": false,
   "sticky_scroll": {
-    "enabled": true
+    "enabled": true,
   },
   "theme": "Catppuccin Mocha",
   "icon_theme": "Material Icon Theme",
@@ -31,17 +37,17 @@
     "font_family": "MesloLGS Nerd Font",
     "font_size": 13,
     "line_height": "standard",
-    "blinking": "on"
+    "blinking": "on",
   },
   "show_whitespaces": "all",
   "minimap": { "show": "always", "current_line_highlight": "all" },
   "tabs": {
     "file_icons": true,
     "git_status": true,
-    "show_diagnostics": "errors"
+    "show_diagnostics": "errors",
   },
   "outline_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "soft_wrap": "editor_width",
   "wrap_guides": [88],
@@ -55,26 +61,26 @@
     "Markdown": { "completions": { "words": "disabled" } },
     "JavaScript": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
       },
-      "format_on_save": "on"
+      "format_on_save": "on",
     },
     "TypeScript": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
       },
-      "format_on_save": "on"
+      "format_on_save": "on",
     },
     "TSX": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
       },
-      "format_on_save": "on"
+      "format_on_save": "on",
     },
     "Python": {
       "language_servers": ["basedpyright", "ruff"],
       "format_on_save": "on",
-      "formatter": [{ "language_server": { "name": "ruff" } }]
+      "formatter": [{ "language_server": { "name": "ruff" } }],
     },
     "Go": {
       "language_servers": ["gopls", "golangci-lint"],
@@ -83,11 +89,11 @@
         {
           "external": {
             "command": "golangci-lint",
-            "arguments": ["fmt", "--stdin"]
-          }
-        }
-      ]
-    }
+            "arguments": ["fmt", "--stdin"],
+          },
+        },
+      ],
+    },
   },
   "lsp": {
     "tailwindcss-language-server": {
@@ -99,11 +105,11 @@
             // clsx
             [
               "clsx\\(((?:[^()]|\\([^()]*\\))*)\\)",
-              "(?:'|\"|`)([^']*)(?:'|\"|`)"
-            ]
-          ]
-        }
-      }
+              "(?:'|\"|`)([^']*)(?:'|\"|`)",
+            ],
+          ],
+        },
+      },
     },
     "golangci-lint": {
       "initialization_options": {
@@ -113,22 +119,15 @@
           "--output.json.path",
           "stdout",
           "--show-stats=false",
-          "--output.text.path="
-        ]
-      }
+          "--output.text.path=",
+        ],
+      },
     },
-    "oxc": {
-      "initialization_options": {
-        "options": {
-          "run": "onSave"
-        }
-      }
-    }
   },
   "inlay_hints": {
     "show_background": false,
     "enabled": false,
-    "toggle_on_modifiers_press": { "control": true, "alt": true }
+    "toggle_on_modifiers_press": { "control": true, "alt": true },
   },
   "diagnostics": {
     "button": true,
@@ -138,22 +137,29 @@
       "update_debounce_ms": 300,
       "padding": 4,
       "min_column": 0,
-      "max_severity": null
-    }
+      "max_severity": null,
+    },
   },
 
   // AI
   "edit_predictions": {
     "provider": "zed",
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "agent": {
     "sidebar_side": "right",
     "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5-mini"
+      "model": "gpt-5-mini",
     },
-    "model_parameters": []
-  }
+    "model_parameters": [],
+  },
+  "agent_servers": {
+    "OpenCode": {
+      "command": "opencode",
+      "args": ["acp"],
+      "type": "custom",
+    },
+  },
 }
