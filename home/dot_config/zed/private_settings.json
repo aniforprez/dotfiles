@@ -8,28 +8,40 @@
 // from the command palette or from `Zed` application menu.
 {
   // Presentation settings
+  "markdown_preview": {
+    "open_markdown_files_in_preview": false
+  },
+  "cli_default_open_behavior": "new_window",
   "language_models": {
     "opencode": {
       "show_go_models": false,
-      "show_zen_models": false,
-    },
+      "show_zen_models": false
+    }
   },
   "project_panel": {
-    "dock": "left",
+    "dock": "left"
   },
   "collaboration_panel": {
-    "dock": "left",
+    "dock": "left"
   },
   "git_panel": {
     "dock": "left",
-    "tree_view": true,
+    "tree_view": true
   },
   "colorize_brackets": false,
   "sticky_scroll": {
-    "enabled": true,
+    "enabled": true
   },
-  "theme": "Catppuccin Mocha",
-  "icon_theme": "Material Icon Theme",
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha"
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme"
+  },
   "ui_font_size": 15,
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_size": 13,
@@ -37,20 +49,20 @@
     "font_family": "MesloLGS Nerd Font",
     "font_size": 13,
     "line_height": "standard",
-    "blinking": "on",
+    "blinking": "on"
   },
   "show_whitespaces": "all",
   "minimap": { "show": "always", "current_line_highlight": "all" },
   "tabs": {
     "file_icons": true,
     "git_status": true,
-    "show_diagnostics": "errors",
+    "show_diagnostics": "errors"
   },
   "outline_panel": {
-    "dock": "right",
+    "dock": "right"
   },
   "soft_wrap": "editor_width",
-  "wrap_guides": [88],
+  "wrap_guides": [120],
   "scrollbar": { "axes": { "horizontal": false } },
 
   // General
@@ -58,29 +70,48 @@
   "base_keymap": "VSCode",
 
   "languages": {
-    "Markdown": { "completions": { "words": "disabled" } },
+    "Markdown": {
+      "completions": { "words": "disabled" },
+      "format_on_save": "on",
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [{ "language_server": { "name": "oxfmt" } }]
+    },
     "JavaScript": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true,
+        "source.fixAll.eslint": true
       },
       "format_on_save": "on",
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [{ "language_server": { "name": "oxfmt" } }]
     },
     "TypeScript": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true,
+        "source.fixAll.eslint": true
       },
       "format_on_save": "on",
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [{ "language_server": { "name": "oxfmt" } }]
     },
     "TSX": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true,
+        "source.fixAll.eslint": true
       },
       "format_on_save": "on",
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [{ "language_server": { "name": "oxfmt" } }]
     },
     "Python": {
       "language_servers": ["basedpyright", "ruff"],
       "format_on_save": "on",
-      "formatter": [{ "language_server": { "name": "ruff" } }],
+      "formatter": [{ "language_server": { "name": "ruff" } }]
     },
     "Go": {
       "language_servers": ["gopls", "golangci-lint"],
@@ -89,13 +120,47 @@
         {
           "external": {
             "command": "golangci-lint",
-            "arguments": ["fmt", "--stdin"],
-          },
-        },
-      ],
+            "arguments": ["fmt", "--stdin"]
+          }
+        }
+      ]
     },
+    "JSON": {
+      "format_on_save": "on",
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    },
+    "JSONC": {
+      "format_on_save": "on",
+      "prettier": {
+        "allowed": false
+      },
+      "formatter": [
+        {
+          "language_server": {
+            "name": "oxfmt"
+          }
+        }
+      ]
+    }
   },
   "lsp": {
+    "oxfmt": {
+      "initialization_options": {
+        "settings": {
+          "fmt.configPath": null,
+          "run": "onSave"
+        }
+      }
+    },
     "tailwindcss-language-server": {
       "settings": {
         "experimental": {
@@ -103,13 +168,10 @@
             // tailwind-variant
             ["tv\\({([^]*?)}\\)", "[\"'`]([^\"'`]*)[\"'`]"],
             // clsx
-            [
-              "clsx\\(((?:[^()]|\\([^()]*\\))*)\\)",
-              "(?:'|\"|`)([^']*)(?:'|\"|`)",
-            ],
-          ],
-        },
-      },
+            ["clsx\\(((?:[^()]|\\([^()]*\\))*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+          ]
+        }
+      }
     },
     "golangci-lint": {
       "initialization_options": {
@@ -119,15 +181,15 @@
           "--output.json.path",
           "stdout",
           "--show-stats=false",
-          "--output.text.path=",
-        ],
-      },
-    },
+          "--output.text.path="
+        ]
+      }
+    }
   },
   "inlay_hints": {
     "show_background": false,
     "enabled": false,
-    "toggle_on_modifiers_press": { "control": true, "alt": true },
+    "toggle_on_modifiers_press": { "control": true, "alt": true }
   },
   "diagnostics": {
     "button": true,
@@ -137,29 +199,33 @@
       "update_debounce_ms": 300,
       "padding": 4,
       "min_column": 0,
-      "max_severity": null,
-    },
+      "max_severity": null
+    }
   },
 
   // AI
   "edit_predictions": {
+    "zed": {
+      "prediction_debounce": 500
+    },
     "provider": "zed",
-    "mode": "subtle",
+    "mode": "subtle"
   },
   "agent": {
     "sidebar_side": "right",
     "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5-mini",
+      "model": "gpt-5-mini"
     },
-    "model_parameters": [],
+    "model_parameters": []
   },
   "agent_servers": {
-    "OpenCode": {
-      "command": "opencode",
-      "args": ["acp"],
-      "type": "custom",
-    },
-  },
+    "opencode": {
+      "default_config_options": {
+        "mode": "plan"
+      },
+      "type": "registry"
+    }
+  }
 }
