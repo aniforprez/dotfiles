@@ -2,13 +2,14 @@
 	defaultBranch = master
 
 [credential]
-	helper = cache --timeout=3600
+    helper = cache --timeout=3600
 
 [grep]
-	lineNumber = true
+    lineNumber = true
 
 [core]
-	excludesFile = ~/.gitignore_global
+    excludesFile = ~/.gitignore_global
+    editor = hx
 
 [color]
 	ui = true
@@ -28,11 +29,20 @@
 	new = green bold
 	whitespace = red reverse
 
+[merge]
+	conflictStyle = zdiff3
+
 [push]
 	autoSetupRemote = true
 
+[diff]
+	algorith = histogram
+
 [fetch]
 	prune = true
+
+[rerere]
+	enabled = true
 
 [pager]
 	diff = delta
@@ -48,7 +58,6 @@
 	line-numbers = true
 	hyperlinks = true
 	side-by-side = true
-
 
 [delta "interactive"]
 	keep-plus-minus-markers = false

@@ -1,11 +1,18 @@
 gui:
   nerdFontsVersion: "3"
 
+  # If true, show the number of lines changed per file in the Files view
+  showNumstatInFilesView: true
+  
+
 notARepository: skip
 
 git:
   # If true, periodically fetch from remote
   autoFetch: false
+
+  diffRenderers:
+    - command: delta --dark --paging=never
 
 # Background refreshes
 refresher:
