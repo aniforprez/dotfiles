@@ -67552,7 +67552,7 @@
 					<key>Text</key>
 					<string>0x1b 0x1b 0x5b 0x44</string>
 				</dict>
-				<key>0xf702-0x300000-0x7b</key>
+				<key>0xf702-0x300000-0x7b-0x1</key>
 				<dict>
 					<key>Action</key>
 					<integer>2</integer>
@@ -67589,7 +67589,7 @@
 					<key>Text</key>
 					<string>0x1b 0x1b 0x5b 0x43</string>
 				</dict>
-				<key>0xf703-0x300000-0x7c</key>
+				<key>0xf703-0x300000-0x7c-0x1</key>
 				<dict>
 					<key>Action</key>
 					<integer>0</integer>
@@ -68624,6 +68624,8 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Title Components</key>
+			<integer>6</integer>
 			<key>Transparency</key>
 			<real>0.075520025154142231</real>
 			<key>Unlimited Scrollback</key>
@@ -68632,6 +68634,8 @@
 			<true/>
 			<key>Use Bright Bold</key>
 			<true/>
+			<key>Use Custom Tab Title</key>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
