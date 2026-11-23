@@ -29,6 +29,7 @@ shell-integration-features = cursor,sudo,title
 # Mac
 macos-option-as-alt = left
 copy-on-select = clipboard
+macos-hidden = always
 
 # Quick terminal (global drop-down)
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
