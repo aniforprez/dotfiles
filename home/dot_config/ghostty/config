@@ -1,0 +1,34 @@
+# Font
+font-family = JetBrains Mono
+font-size = 14
+
+# Theme
+theme = Catppuccin Macchiato
+
+# Window
+window-padding-x = 10
+window-padding-y = 8
+window-padding-balance = true
+background-opacity = 0.95
+background-blur = 20
+macos-titlebar-style = tabs
+window-save-state = always
+confirm-close-surface = false
+
+# Cursor
+cursor-style = bar
+cursor-style-blink = false
+
+# Shell integration (zsh)
+shell-integration = zsh
+shell-integration-features = cursor,sudo,title
+
+# Mac
+macos-option-as-alt = left
+copy-on-select = clipboard
+
+# Quick terminal (global drop-down)
+keybind = global:ctrl+grave_accent=toggle_quick_terminal
+quick-terminal-position = top
+quick-terminal-animation-duration = 0.15
+quick-terminal-autohide = true
