@@ -19,6 +19,9 @@ confirm-close-surface = false
 cursor-style = block
 cursor-style-blink = true
 
+# Launch every window inside Zellij (tabs live in Zellij's bottom bar)
+command = /opt/homebrew/bin/zellij
+
 # Shell integration (zsh)
 shell-integration = zsh
 shell-integration-features = cursor,sudo,title
