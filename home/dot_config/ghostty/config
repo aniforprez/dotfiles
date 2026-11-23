@@ -16,7 +16,7 @@ window-save-state = always
 confirm-close-surface = false
 
 # Cursor
-cursor-style = bar
+cursor-style = block
 cursor-style-blink = false
 
 # Shell integration (zsh)
