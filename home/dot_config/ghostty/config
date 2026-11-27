@@ -36,5 +36,6 @@ macos-hidden = always
 # Quick terminal (global drop-down)
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
 quick-terminal-position = top
+quick-terminal-screen = mouse
 quick-terminal-animation-duration = 0.15
 quick-terminal-autohide = true
